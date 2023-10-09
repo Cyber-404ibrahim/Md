@@ -172,7 +172,6 @@ def masuk():
         jalan("\n%s[•] Masukan token untuk menghubungkan akun ke server"%(p))
         if jeeck in(""):
         	jalan("%s[•] Isi token yang benar celeng"%(m));exit()
-            nama = requests.get('https://graph.facebook.com/me?access_token=%s'%(jeeck)).json()['name']
             jalan("%s[•] Login berhasil broo"%(B))
             open('data/token.txt', 'w').write(jeeck);___Jeeck___xnano___lawack___xnxx___()
         except (KeyError,IOError):
